@@ -30,6 +30,10 @@ public class Order extends BaseEntity {
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<OrderItem> orderItems = new ArrayList<>();
 
+    @ManyToOne
+    @JoinColumn(name = "payment_order_id")
+    private PaymentOrder paymentOrder;
+
     @ManyToOne(fetch = FetchType.LAZY)
     private Address shippingAddress;
 
