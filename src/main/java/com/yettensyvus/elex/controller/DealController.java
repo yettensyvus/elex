@@ -16,7 +16,7 @@ public class DealController {
     private final DealService dealService;
 
     @PostMapping
-    public ResponseEntity<Deal> createDeal(@RequestBody Deal deal) {
+    public ResponseEntity<Deal> createDeal(@RequestBody Deal deal) throws Exception {
         Deal createdDeal = dealService.createDeal(deal);
         return new ResponseEntity<>(createdDeal, HttpStatus.CREATED);
     }

@@ -52,7 +52,7 @@ public class SellerController {
             throw new Exception("Invalid OTP");
         }
 
-        Seller seller = sellerService.verifyEmail(verificationCode.getEmailAddress(), otp);
+        Seller seller = sellerService.verifyEmail(verificationCode.getEmail(), otp);
         return ResponseEntity.ok(seller);
     }
 
@@ -63,7 +63,7 @@ public class SellerController {
         String otp = OtpUtil.generateOtp();
         VerificationCode verificationCode = new VerificationCode();
         verificationCode.setOtp(otp);
-        verificationCode.setEmailAddress(seller.getEmail());
+        verificationCode.setEmail(seller.getEmail());
         verificationCodeRepository.save(verificationCode);
 
         String subject = "Elex Email Verification Code";
