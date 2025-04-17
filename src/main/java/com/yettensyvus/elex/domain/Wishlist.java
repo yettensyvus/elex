@@ -8,6 +8,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "wishlists")
 @Getter
 @Setter
 @AllArgsConstructor

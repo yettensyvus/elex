@@ -2,9 +2,11 @@ package com.yettensyvus.elex.domain;
 
 import com.yettensyvus.elex.domain.abstraction.BaseEntity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
 
 @Entity
+@Table(name = "addresses")
 @Getter
 @Setter
 @NoArgsConstructor

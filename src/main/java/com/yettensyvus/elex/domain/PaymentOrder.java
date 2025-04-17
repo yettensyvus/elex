@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "payment_orders")
 @Getter
 @Setter
 @AllArgsConstructor

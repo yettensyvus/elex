@@ -12,12 +12,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
+@Table(name = "orders")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@Table(name = "orders")
 public class Order extends BaseEntity {
 
     private String orderId;
