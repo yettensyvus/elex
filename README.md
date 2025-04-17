@@ -7,3 +7,5 @@ A **RESTful API** for an eCommerce platform built with **Spring Boot 3**, **Spri
 ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens)
 
 ---
+### ER Diagram
+![](elex-public.png)
