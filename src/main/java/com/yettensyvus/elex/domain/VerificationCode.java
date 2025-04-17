@@ -15,7 +15,7 @@ public class VerificationCode extends BaseEntity {
     private String otp;
 
     @Column(nullable = false)
-    private String emailAddress;
+    private String email;
 
     @OneToOne(fetch = FetchType.LAZY)
     private User user;
